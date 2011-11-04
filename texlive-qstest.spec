@@ -66,6 +66,7 @@ README file for details.
 %doc %{_texmfdistdir}/source/latex/qstest/qstest.drv
 %doc %{_texmfdistdir}/source/latex/qstest/qstest.dtx
 %doc %{_texmfdistdir}/source/latex/qstest/qstest.ins
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -76,3 +77,5 @@ README file for details.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc source %{buildroot}%{_texmfdistdir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
