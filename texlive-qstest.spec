@@ -6,7 +6,7 @@
 # catalog-version undef
 Name:		texlive-qstest
 Version:	20080824
-Release:	9
+Release:	10
 Summary:	Bundle for unit tests and pattern matching
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/qstest
