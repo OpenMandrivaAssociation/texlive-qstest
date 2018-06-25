@@ -5,7 +5,7 @@
 # catalog-license lppl
 # catalog-version undef
 Name:		texlive-qstest
-Version:	20170414
+Version:	20180303
 Release:	1
 Summary:	Bundle for unit tests and pattern matching
 Group:		Publishing
