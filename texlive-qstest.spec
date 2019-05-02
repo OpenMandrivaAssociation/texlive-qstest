@@ -5,8 +5,8 @@
 # catalog-license lppl
 # catalog-version undef
 Name:		texlive-qstest
-Version:	20180303
-Release:	2
+Version:	20190228
+Release:	1
 Summary:	Bundle for unit tests and pattern matching
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/qstest
