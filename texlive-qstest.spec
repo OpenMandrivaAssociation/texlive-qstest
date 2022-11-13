@@ -1,19 +1,13 @@
-# revision 15878
-# category Package
-# catalog-ctan /macros/latex/contrib/qstest
-# catalog-date 2008-08-24 10:50:19 +0200
-# catalog-license lppl
-# catalog-version undef
 Name:		texlive-qstest
-Version:	20190228
+Version:	15878
 Release:	1
 Summary:	Bundle for unit tests and pattern matching
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/qstest
 License:	LPPL
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/qstest.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/qstest.doc.tar.xz
-Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/qstest.source.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/qstest.r%{version}.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/qstest.doc.r%{version}.tar.xz
+Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/qstest.source.r%{version}.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -33,12 +27,12 @@ that are automatically verified to work as expected. Check the
 README file for details.
 
 %post
-    %{_sbindir}/texlive.post
+%{_sbindir}/texlive.post
 
 %postun
-    if [ $1 -eq 0 ]; then
+if [ $1 -eq 0 ]; then
 	%{_sbindir}/texlive.post
-    fi
+fi
 
 #-----------------------------------------------------------------------
 %files
@@ -59,24 +53,11 @@ README file for details.
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1 -a2
+%setup -c -a1 -a2
+%autopatch -p1
 
 %build
 
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc source %{buildroot}%{_texmfdistdir}
-
-
-%changelog
-* Wed Jan 04 2012 Paulo Andrade <pcpa@mandriva.com.br> 20080824-2
-+ Revision: 755567
-- Rebuild to reduce used resources
-
-* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 20080824-1
-+ Revision: 719422
-- texlive-qstest
-- texlive-qstest
-- texlive-qstest
-- texlive-qstest
-
