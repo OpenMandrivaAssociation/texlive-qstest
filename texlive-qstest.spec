@@ -3,7 +3,7 @@ Version:	15878
 Release:	2
 Summary:	Bundle for unit tests and pattern matching
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/qstest
+URL:		https://www.ctan.org/tex-archive/macros/latex/contrib/qstest
 License:	LPPL
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/qstest.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/qstest.doc.r%{version}.tar.xz
