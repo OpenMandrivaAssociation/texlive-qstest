@@ -1,6 +1,6 @@
 Name:		texlive-qstest
-Version:	15878
-Release:	2
+Version:	73069
+Release:	1
 Summary:	Bundle for unit tests and pattern matching
 Group:		Publishing
 URL:		https://www.ctan.org/tex-archive/macros/latex/contrib/qstest
